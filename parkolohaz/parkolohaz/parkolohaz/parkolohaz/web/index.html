@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Zsák utcai Parkolóház weboldala" />
     <meta name="author" content="Zsák utcai Parkolóház Kft." />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <title>Parkolóház</title>
 
     <!-- Ikonkészlet -->
     <script src="assets/fa-all.js"></script>
     <!-- Bootrsap CSS -->
     <link href="assets/bootstrap.css" rel="stylesheet" />
+    <!-- Parkolóház CSS -->
+    <link href="parkolohaz.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -26,7 +31,17 @@
                 <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                Menüelemek
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link rounded js-scroll-trigger" href="#szolgaltatasok">Szolgáltatások</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded js-scroll-trigger" href="#rolunk">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded js-scroll-trigger" href="#kapcsolat">Kapcsolat</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -107,10 +122,10 @@
                         hogy mindig biztonságban érezhesse autóját!</p>
                 </div>
 
-                <p class="col-lg-4 mr-auto">
-                <p>Hosszú és rövid távra is bérelhet nálunk parkolóhelyet, legyen szó akár autóról, akár
-                    motorkerékpárról. Bővebb információért írjon nekünk az alábbi űrlap segítségével!</p>
-                </p>
+                <div class="col-lg-4 mr-auto">
+                    <p>Hosszú és rövid távra is bérelhet nálunk parkolóhelyet, legyen szó akár autóról, akár
+                        motorkerékpárról. Bővebb információért írjon nekünk az alábbi űrlap segítségével!</p>
+                </div>
             </div>
         </div>
     </section>
@@ -287,6 +302,46 @@
             </div>
         </div>
     </div>
+    <!-- Mobilalkalmazás felugró kártya -->
+    <div class="szolgaltatasok-modal modal fade" id="szolgaltatasokModal3" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <h2 class="szolgaltatasok-modal-title text-secondary text-uppercase text-center mb-0">
+                                    Mobilalkalmazás
+                                </h2>
+
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                    <img class="img-fluid rounded mb-5" src="assets/img/modals/application.jpg"
+                                        alt="Mobilalkalmazás" />
+                                </div>
+
+                                <p>Parkolóházunkba már mobilalkalmazás segítségével is regisztrálhat. Az applikációval könnyedén azonosíthatja magát a beléptető kapuknál. Az alkalmazás ezen felül segít Önnek elnavigálni a kijelölt parkolóhelyhez is.</p>
+                                <button class="btn btn-primary" data-dismiss="modal">
+                                    <i class="fas fa-times fa-fw"></i>
+                                    Bezár
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Bootstrap, és függőségei -->
     <script src="assets/jquery.min.js"></script>
@@ -295,6 +350,7 @@
 
     <!-- Téma-specifikus szkriptek -->
     <script src="assets/scripts.js"></script>
+     <script src="parkolohaz.js"></script>
 
 </body>
 
